@@ -222,8 +222,8 @@ const fetchAndStoreProductsData = async (data) => {
             }
         }
     }
-    window.location.reload(true);
     localStorage.setItem("products_data", JSON.stringify(products));
+    window.location.reload(true);
 }
 //CREATE DOM ELEMENTS
 const createProductCard = ({ title, images, stock, price, slug }) => {
